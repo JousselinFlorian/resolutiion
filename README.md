@@ -145,7 +145,7 @@ Though SQLite works well for this stage, migrating to a more scalable database l
 Limiting book queries to 20 results is a good start, but implementing pagination or infinite scrolling will enhance performance and user experience when dealing with extensive libraries.
 
 ### Security
-Adding a Web Application Firewall (WAF) could help protect the app by filtering malicious traffic and blocking suspicious IPs or regions, adding an extra security layer.
+I already added sanitisation on the book fields and added uuid on users to avoid potential IDOR attacks but adding more security would be good such as a Web Application Firewall (WAF) which could help protect the app by filtering malicious traffic and blocking suspicious IPs or regions, adding an extra security layer.
 
 ### UI/UX
 The current design is minimalistic; adding more styling and personality would improve engagement. Expanding the book model with additional fields could enable useful features like filtering and sorting. The data model also supports new pages—such as a “Read” list showing user-read books—that would enrich the experience. Also changing the switch to a dropdown would be nice to be able to add different statuses (see ReadStatus enum) which will allow a user to track their read progress.
