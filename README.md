@@ -148,7 +148,7 @@ Limiting book queries to 20 results is a good start, but implementing pagination
 Adding a Web Application Firewall (WAF) could help protect the app by filtering malicious traffic and blocking suspicious IPs or regions, adding an extra security layer.
 
 ### UI/UX
-The current design is minimalistic; adding more styling and personality would improve engagement. Expanding the book model with additional fields could enable useful features like filtering and sorting. The data model also supports new pages—such as a “Read” list showing user-read books—that would enrich the experience.
+The current design is minimalistic; adding more styling and personality would improve engagement. Expanding the book model with additional fields could enable useful features like filtering and sorting. The data model also supports new pages—such as a “Read” list showing user-read books—that would enrich the experience. Also changing the switch to a dropdown would be nice to be able to add different statuses (see ReadStatus enum) which will allow a user to track their read progress.
 
 ### Testing
 The project would benefit from broader test coverage, including more unit, integration, and end-to-end tests. Integrating these into a CI/CD pipeline would help maintain quality and catch regressions during development.
