@@ -3,7 +3,7 @@ import { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
-import { Navbar } from "@/components/NavBar";
+import { Navbar } from "@/components/generic/NavBar";
 import clsx from "clsx";
 
 export const metadata: Metadata = {

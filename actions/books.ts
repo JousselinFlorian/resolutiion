@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site"
 import { normaliseInput } from "@/helpers/books"
 import { prisma } from "@/lib/prisma"
 import { Prisma } from "@prisma/client"
-import { revalidatePath } from "next/cache"
+import { revalidatePath, unstable_cache } from "next/cache"
 
 export async function addBook(formData: FormData) {
     const title = normaliseInput((formData.get("title") as string)?.trim())
@@ -31,3 +31,24 @@ export async function addBook(formData: FormData) {
 
     revalidatePath("/")
 }
+
+export const getBooks = unstable_cache(
+    async () => {
+        try {
+            const books = await prisma.book.findMany({
+                orderBy: {
+                    createdAt: 'desc'
+                }
+            });
+            return books;
+        } catch (error) {
+            console.error('Error fetching books:', error);
+            throw new Error('Failed to fetch books');
+        }
+    },
+    ['books'],
+    {
+        tags: ['books'],
+        revalidate: 3600 // Cache for 1 hour
+    }
+);

@@ -10,7 +10,7 @@ import {
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/ThemeSwitch";
+import { ThemeSwitch } from "@/components/generic/ThemeSwitch";
 import NextLink from "next/link";
 import Image from "next/image";
 

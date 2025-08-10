@@ -1,5 +1,5 @@
-import { NewBookForm } from "@/components/NewBookForm";
-import { Title } from "@/components/Text";
+import { NewBookForm } from "@/components/app/new/NewBookForm";
+import { Title } from "@/components/generic/Text";
 import { siteConfig } from "@/config/site";
 
 export default function NewBookPage() {

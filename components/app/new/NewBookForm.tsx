@@ -4,7 +4,7 @@ import { addBook } from "@/actions/books";
 import { Input } from "@heroui/input";
 import { Button } from "@heroui/button";
 import { useState, useTransition } from "react";
-import { Body } from "./Text";
+import { Body } from "../../generic/Text";
 import { siteConfig } from "@/config/site";
 
 export const NewBookForm = () => {

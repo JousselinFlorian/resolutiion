@@ -16,6 +16,10 @@ export const siteConfig = {
   pages: {
     books: {
       title: "Books",
+      errors: {
+        noBooks: "No books found yet.",
+        startAdding: "Start by adding your first book!",
+      },
     },
     newBook: {
       title: "New Book",
