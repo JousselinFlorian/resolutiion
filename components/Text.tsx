@@ -8,3 +8,15 @@ export const Title = ({
 		{children}
 	</h1>
 )
+
+export const Body = ({
+	children,
+	...props
+}: any) => {
+	const defaultTextColor = props?.className?.includes("text-") ? "" : "text-neutral-500 dark:text-neutral-400"
+	return (
+		<p className={`text-md ${defaultTextColor} ${props?.className ?? ""}`}>
+			{children}
+		</p>
+	)
+}

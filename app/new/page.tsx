@@ -1,3 +1,4 @@
+import { NewBookForm } from "@/components/NewBookForm";
 import { Title } from "@/components/Text";
 import { siteConfig } from "@/config/site";
 
@@ -8,7 +9,7 @@ export default function NewBookPage() {
         <Title>{siteConfig.pages.newBook.title}</Title>
       </div>
       <div className="flex flex-col w-full max-w-xl items-center">
-
+        <NewBookForm />
       </div>
     </section>
   );

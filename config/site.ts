@@ -19,6 +19,13 @@ export const siteConfig = {
     },
     newBook: {
       title: "New Book",
+      bookAdded: "The book has been added successfully.",
+      errors: {
+        emptyField: "The book title and author name are required.",
+        tooLongField: "The book title and author name must be less than 50 characters.",
+        uniqueTitle: "A book with this title already exists.",
+        generic: "An unknown error occurred.",
+      },
     },
   },
   links: {
