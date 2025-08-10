@@ -136,7 +136,7 @@ The application uses SQLite with the following main entities:
 Currently, the app uses a mock user for simplicity. In the future, implementing a robust authentication system—using NextAuth, AWS Cognito, or similar—would secure user data and ensure that users can only access their own books.
 
 ### External API
-While server actions simplify development here, adopting an external API would better support multi-platform access and clearly separate frontend and backend responsibilities, improving scalability and maintainability. Also a caching layer like Redis would be a good idea to implement when moving to an external API which could catch the last books page for example.
+While server actions simplify development here, adopting an external API would better support multi-platform access and clearly separate frontend and backend responsibilities, improving scalability and maintainability. Also a caching layer like Redis would be a good idea to implement when moving to an external API which could cache the last books page for example.
 
 ### Database
 Though SQLite works well for this stage, migrating to a more scalable database like PostgreSQL would better support larger datasets and concurrent users as the app grows.
