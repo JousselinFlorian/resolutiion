@@ -130,7 +130,7 @@ The application uses SQLite with the following main entities:
 - **Database Operations**: CRUD operations with proper error handling
 - **Server Actions**: Form processing and validation
 
-## 🔮 What's Next
+## 🔮 What's Next
 
 ### Authentication
 Currently, the app uses a mock user for simplicity. In the future, implementing a robust authentication system—using NextAuth, AWS Cognito, or similar—would secure user data and ensure that users can only access their own books.
