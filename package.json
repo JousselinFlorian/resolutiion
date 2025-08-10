@@ -9,7 +9,9 @@
     "migrate": "prisma migrate dev",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
-    "test:unit": "jest tests/unit --passWithNoTests"
+    "test:unit": "jest tests/unit --passWithNoTests",
+    "test:integration": "jest tests/integration --passWithNoTests",
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "@heroui/react": "^2.8.1",
