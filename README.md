@@ -132,23 +132,23 @@ The application uses SQLite with the following main entities:
 
 ## 🔮 What's Next
 
-### Authentication
+### Authentication
 Currently, the app uses a mock user for simplicity. In the future, implementing a robust authentication system—using NextAuth, AWS Cognito, or similar—would secure user data and ensure that users can only access their own books.
 
-### External API
+### External API
 While server actions simplify development here, adopting an external API would better support multi-platform access and clearly separate frontend and backend responsibilities, improving scalability and maintainability. Also a caching layer like Redis would be a good idea to implement when moving to an external API which could catch the last books page for example.
 
-### Database
+### Database
 Though SQLite works well for this stage, migrating to a more scalable database like PostgreSQL would better support larger datasets and concurrent users as the app grows.
 
-### Performance
+### Performance
 Limiting book queries to 20 results is a good start, but implementing pagination or infinite scrolling will enhance performance and user experience when dealing with extensive libraries.
 
-### Security
+### Security
 Adding a Web Application Firewall (WAF) could help protect the app by filtering malicious traffic and blocking suspicious IPs or regions, adding an extra security layer.
 
-### UI/UX
+### UI/UX
 The current design is minimalistic; adding more styling and personality would improve engagement. Expanding the book model with additional fields could enable useful features like filtering and sorting. The data model also supports new pages—such as a “Read” list showing user-read books—that would enrich the experience.
 
-### Testing
+### Testing
 The project would benefit from broader test coverage, including more unit, integration, and end-to-end tests. Integrating these into a CI/CD pipeline would help maintain quality and catch regressions during development.
